@@ -350,7 +350,6 @@ input {
   justify-content: center;
   align-items: center;
   fill: var(--social-lincs-client-color);
-  transition: background-color 250ms var(--cubic);
 }
 .icon-our-team-card:hover,
 .icon-our-team-card:focus {
@@ -380,8 +379,8 @@ input {
   justify-content: center;
   width: 170px;
   height: 92px;
-  transition: border 250ms var(--cubic);
-  transition: fill 250ms var(--cubic);
+  /* transition: border 250ms var(--cubic);
+  transition: fill 250ms var(--cubic); */
 }
 .icons-regular-customers-list > li:not(:last-child) {
   margin-right: 30px;
@@ -418,7 +417,6 @@ input {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
-  transition:color 250ms var(--cubic);
 }
 .link-footer:hover,
 .link-footer:focus {
@@ -461,7 +459,7 @@ input {
 .icons-footer-list li:not(:last-child) {
   margin-right: 10px;
 }
-.icons-footer-list a {
+.icon-footer {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -469,10 +467,9 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms var(--cubic);
 }
-.icons-footer-list a:hover,
-.icons-footer-list a:focus {
+.icon-footer:hover,
+.icon-footer:focus {
   background-color: var(--aiming-color);
 }
 .icon-footer {
@@ -701,8 +698,8 @@ input {
   height: 18px;
   transition: fill 250ms var(--cubic);
 }
-.icon-close:hover,
-.icon-close:focus {
+.button-close-modal:hover .icon-close,
+.button-close-modal:focus .icon-close {
   fill: var(--aiming-color);
 }
 .contact-form {
@@ -810,6 +807,10 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.icon-checkbox:hover,
+.icon-checkbox:focus {
+  border-color: var(--aiming-color);
 }
 .link-policy-conf {
   display: inline-block;
