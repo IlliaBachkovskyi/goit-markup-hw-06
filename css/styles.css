@@ -808,8 +808,8 @@ input {
   align-items: center;
   justify-content: center;
 }
-.icon-checkbox:hover,
-.icon-checkbox:focus {
+.agreement:hover .icon-checkbox,
+.agreement:focus .icon-checkbox {
   border-color: var(--aiming-color);
 }
 .link-policy-conf {
