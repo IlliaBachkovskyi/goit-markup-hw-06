@@ -808,6 +808,9 @@ input {
   align-items: center;
   justify-content: center;
 }
+.checkbox:focus+.icon-checkbox {
+  border-color: var(--aiming-color);
+}
 .agreement:hover .icon-checkbox,
 .agreement:focus .icon-checkbox {
   border-color: var(--aiming-color);
