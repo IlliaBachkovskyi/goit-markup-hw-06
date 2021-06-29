@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-markup-hw-06</title>
     <link
@@ -197,29 +197,32 @@
         <div class="container">
           <h2 class="about-us-title">Чем мы занимаемся</h2>
           <ul class="about-us-list">
-            <li>
+            <li class="about-us-card">
               <img
                 src="./images/box1.jpg"
                 alt="box1"
                 width="370"
                 height="294"
               />
+              <p class="about-us-card-title">Десктопные приложения</p>
             </li>
-            <li>
+            <li class="about-us-card">
               <img
                 src="./images/box2.jpg"
                 alt="box2"
                 width="370"
                 height="294"
               />
+              <p class="about-us-card-title">Мобильные приложения</p>
             </li>
-            <li>
+            <li class="about-us-card">
               <img
                 src="./images/box3.jpg"
                 alt="box3"
                 width="370"
                 height="294"
               />
+              <p class="about-us-card-title">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -546,8 +549,8 @@
           <b class="title-modal-form"
             >Оставьте свои данные, мы вам перезвоним</b
           >
-          <label class="contact-form-label" for="user-name">Имя</label>
-          <div class="input-box">
+          <div class="input-box-name">
+            <label class="contact-form-label" for="user-name">Имя</label>
             <input
               class="contact-form-input"
               name="user-name"
@@ -560,8 +563,8 @@
               <use href="./images/icons.svg#icon-name-modal"></use>
             </svg>
           </div>
-          <label class="contact-form-label" for="user-phone">Телефон</label>
-          <div class="input-box">
+          <div class="input-box-phone">
+            <label class="contact-form-label" for="user-phone">Телефон</label>
             <input
               class="contact-form-input"
               name="user-phone"
@@ -574,8 +577,8 @@
               <use href="./images/icons.svg#icon-phone-modal"></use>
             </svg>
           </div>
-          <label class="contact-form-label" for="user-email">Почта</label>
-          <div class="input-box">
+          <div class="input-box-email">
+            <label class="contact-form-label" for="user-email">Почта</label>
             <input
               class="contact-form-input"
               name="user-email"
@@ -588,7 +591,7 @@
               <use href="./images/icons.svg#icon-mail-modal"></use>
             </svg>
           </div>
-          <div class="input-box">
+          <div class="input-box-textarea">
             <label class="contact-form-label">Коментарий</label>
             <textarea
               class="coment-form-textarea"
